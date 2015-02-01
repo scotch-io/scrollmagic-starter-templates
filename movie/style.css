@@ -1,0 +1,307 @@
+/*===================================
+=            BASE STYLES            =
+===================================*/
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+}
+a {
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+    text-decoration: none !important;
+}
+.force-gpu * {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+
+
+
+/*========================================
+=            INDIVIDUAL ITEMS            =
+========================================*/
+#site-wrap {
+    height: 100%;
+}
+#scroll-wrap {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touched;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+main {
+    position: relative;
+    background: #fff;
+    z-index: 999999;
+    padding-top: 51px; /* Height of Nav */
+}
+.ScrollSceneIndicators {
+    z-index: 99999999 !important;
+}
+#loader {
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    color: rgb(255, 69, 69);
+
+}
+#loader p {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-top: 25px;
+    font-size: 14px;
+}
+#loader i {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin: -25px 0 0 -25px;
+    font-size: 50px;
+    -webkit-animation: pulsate 1.5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation: pulsate 1.5s ease-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+/*==============================
+=            TOPPER            =
+==============================*/
+#topper {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+#topper a.skip-to-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+#topper img#image-movie {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#topper img.sequence { display: none; }
+
+
+
+
+
+
+/*================================
+=            SITE NAV            =
+================================*/
+#site-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+#site-nav.go-absolute {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+}
+#site-nav.go-absolute.go-fixed {
+    position: fixed;
+}
+#site-nav a.navbar-brand i { color: rgb(255, 69, 69); }
+
+
+
+
+/*============================
+=            MAIN            =
+============================*/
+main .row {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-bottom: solid 1px #e3e3e3;
+}
+main .row .row {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+}
+#about {
+    text-align: center;
+}
+#work a {
+    display: block;
+    margin: 0 auto 15px;
+}
+#work a img {
+    width: 100%;
+}
+#work a img:hover {
+    background: rgb(255, 69, 69);
+}
+main h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+/*==============================
+=            FOOTER            =
+==============================*/
+footer a {
+    background: rgb(255, 69, 69);
+    text-align: center;
+    padding: 50px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+}
+footer a:hover {
+    color: #fff;
+    background: rgb(255, 52, 52);
+}
+
+
+
+
+
+
+
+
+
+
+/*==================================
+=            KEY FRAMES            =
+==================================*/
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+@keyframes pulsate {
+    0% {
+        transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

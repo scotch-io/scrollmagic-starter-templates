@@ -1,0 +1,2 @@
+# Scroll Magic Starter Templates
+================================

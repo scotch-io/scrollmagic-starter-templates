@@ -1,0 +1,189 @@
+/*=============================
+=            FONTS            =
+=============================*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic');
+
+
+
+/*===================================
+=            BASE STYLES            =
+===================================*/
+body {
+    font-family: 'Lato';
+}
+section, header, footer, main, article, nav, aside {
+    position: relative;
+}
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+    text-decoration: none !important;
+}
+.force-gpu * {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.super-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/*=============================
+=            CARDS            =
+=============================*/
+section {
+    position: relative;
+}
+section .wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    min-height: 800px;
+    min-height: 100vh;
+}
+section:nth-child(even) .wrap {
+    background: rgb(182, 182, 182);
+}
+section h2 {
+    font-size: 80px;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*======================================
+=            CALL TO ACTION            =
+======================================*/
+#call-to-action .wrap {
+    text-align: center;
+    background: rgb(255, 69, 69);
+}
+#call-to-action h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 130px;
+    margin: -100px 0 0;
+}
+#call-to-action p {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+    color: #444;
+}
+
+
+
+
+
+/*=============================
+=            ABOUT            =
+=============================*/
+#about .wrap {
+    padding: 100px 0;
+    background: rgb(177, 106, 255)
+}
+#about h2 {
+    color: #fff;
+}
+
+
+
+/*================================
+=            SERVICES            =
+================================*/
+#services .wrap {
+    padding: 100px 0;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-image: url('http://placekitten.com/1500/1000');
+    background-color: orange;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+#services .wrap:before {
+    position: absolute;
+    content: ' ';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(225deg, forestgreen 7%, orange);
+    background-image: linear-gradient(225deg, forestgreen 7%, orange);
+    display: block;
+    opacity: 0.6;
+}
+#services h2, #services h3, #services p { color: #fff; }
+
+
+
+
+/*============================
+=            WORK            =
+============================*/
+#work .wrap {
+    padding: 100px 0;
+    background: rgb(52, 140, 255);
+}
+#work h2, #work h3, #work p { color: #fff; }
+
+
+
+
+
+/*===============================
+=            CONTACT            =
+===============================*/
+#contact .wrap {
+    background: #00FF9E;
+}
+
+
+
+
+/*==============================
+=            FOOTER            =
+==============================*/
+#footer .wrap { background: #222; }
+#footer h2 { color: #fff; }
+
+
+
+
+
+
+
+
+/*=====================================
+=            MEDIA QUERIES            =
+=====================================*/
+@media only screen and (max-width : 767px) {
+    #call-to-action h1 { font-size: 60px; }
+    #call-to-action p { font-size: 17px; }
+    #footer h2 { font-size: 30px; }
+}
+
+
+
